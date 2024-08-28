@@ -1,0 +1,389 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+.menu-principal {
+    background-color: #1d1d1d;
+    padding: 10px 0;
+    width: 100%;
+    margin: 25px;
+}
+
+.header-1 {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    justify-content: space-around;
+}
+
+
+.logo img {
+    max-width: 200px;
+
+}
+
+.redes-sociais ul {
+    list-style: none;
+    display: flex;
+}
+
+.redes-sociais li {
+    margin-left: 10px;
+}
+
+.redes-sociais img {
+    width: 24px;
+    height: 24px;
+}
+
+/* menu e busca */
+.menu-url {
+    padding: 00px;
+}
+
+.header-2 {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+   
+}
+
+.menu :hover {
+    color: rgb(255, 255, 255);
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: orange;
+}
+
+body {
+    background-color: #121212;
+    color: #f0f0f0;
+    position: relative;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 2000px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.card h3 {
+    margin: 0 0 10px;
+    font-size: 24px;
+    color: #333;
+}
+
+.price {
+    font-size: 20px;
+    color: #e67e22;
+    margin: 0 0 20px;
+}
+
+.reserve-button {
+    background-color: #e67e22;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.reserve-button:hover {
+    background-color: #d35400;
+}
+
+header {
+    background-color: orange;
+    padding: 1em;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: orange;
+}
+
+main {
+    max-width: 1000px;
+    margin: 2em auto;
+    padding: 1.5em;
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.property-title h1 {
+    font-size: 2.5em;
+    color: orange;
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+.property-gallery {
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+.property-gallery h2 {
+    font-size: 1.8em;
+    margin-bottom: 1em;
+    color: orange;
+}
+
+.slider {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 1em;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+    min-width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgb(0 0 0 / 0%);
+    color: #ff8400;
+    border: none;
+    padding: 1em;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.card-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    position: relative;
+}
+
+.card h3 {
+    margin: 0 0 10px;
+    font-size: 24px;
+    color: #333;
+}
+
+.price {
+    font-size: 20px;
+    color: #e67e22;
+    margin: 0 0 20px;
+}
+
+.reserve-button {
+    background-color: #e67e22;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.reserve-button:hover {
+    background-color: #d35400;
+}
+
+
+.property-description,
+.property-features,
+.property-availability,
+.property-reviews,
+.host-reviews {
+    margin-bottom: 2em;
+    padding: 1em;
+    background-color: #2a2a2a;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.property-description h2,
+.property-features h2,
+.property-availability h2,
+.property-reviews h2,
+.host-reviews h2 {
+    font-size: 1.8em;
+    margin-bottom: 1em;
+    text-align: center;
+    color: orange;
+}
+
+.property-description p,
+.property-features ul,
+.property-availability p,
+.property-reviews p,
+.host-reviews p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #e0e0e0;
+}
+
+.property-features ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.property-features li {
+    display: flex;
+    margin-bottom: 0.5em;
+    padding-left: 1.5em;
+    position: relative;
+    color: #f0f0f0;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.property-features img {
+    max-width: 25px;
+    margin: 15px;
+    display: inline-block;
+    align-items: ce;
+}
+
+.property-features li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: orange;
+    font-weight: bold;
+}
+
+.property-availability p {
+    font-size: 1.2em;
+    color: #f0f0f0;
+}
+
+.property-reviews ul,
+.host-reviews ul {
+    list-style: none;
+    margin-top: 1em;
+    padding-left: 0;
+}
+
+.property-reviews li,
+.host-reviews li {
+    margin-bottom: 1em;
+    font-size: 1.2em;
+    line-height: 0.6;
+    color: #e0e0e0;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.star-rating {
+    display: inline-block;
+    font-size: 1.5em;
+    color: orange;
+    cursor: pointer;
+    direction: rtl;
+}
+
+.star-rating input[type="radio"] {
+    display: none;
+}
+
+.star-rating label {
+    color: #555;
+    font-size: 2em;
+    transition: color 0.3s ease;
+    margin-left: 0.2em;
+}
+
+.star-rating label:hover,
+.star-rating label:hover~label,
+.star-rating input:checked~label {
+    color: orange;
+}
+
+#footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1d1d1d;
+    margin-top: 20px;
+    width: 100%;
+    color: #aaaaaa;
+}
+
+footer p {
+    font-size: 1em;
+    color: #bdbdbd;
+}

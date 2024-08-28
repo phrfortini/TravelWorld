@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Imóvel</title>
+    <link rel="stylesheet" href="css/cadastroimove.css">
+</head>
+<div class="header-1">
+    <div class="logo">
+        <img src="img/logo.png" class="logo" alt="logomarca" />
+    </div>
+    <div class="header-2">
+        <div class="menu">
+            <ul>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="locador.html">Cadastro</a></li>
+                    <li><a href="reserva.html">Reserva</a></li>
+                    <li><a href="cadastroimovel.html">Anuncie aqui</a></li>
+                </ul>
+            </ul>
+        </div>
+    </div>
+    <div class="redes-sociais">
+        <ul>
+            <li><a href="https://www.instagram.com/"><img src="img/rede1.png" alt="Instagram" /></a></li>
+            <li><a href="https://x.com/home"><img src="img/rede2.png" alt="Twitter" /></a></li>
+        </ul>
+    </div>
+
+</div>
+
+<body>
+    <header>
+        <div class="banner">
+            <img src="img/banner-cadastro.jpg" alt="Banner de Viagem">
+        </div>
+    </header>
+    <main class="main-content">
+        <aside class="sponsored-ad">
+            <h2>Anúncio Patrocinado</h2>
+            <img src="img/anunciolateral.jpg" alt="Anúncio Patrocinado">
+            <p>Visite nosso patrocinador e descubra ofertas especiais para sua próxima viagem!</p>
+            <hr>
+            <h2>Anúncio Patrocinado</h2>
+            <img src="img/bannerlateral2.png" alt="Anúncio Patrocinado">
+            <p>Reserve seu imovel para o evento mais esperado do ano!</p>
+        </aside>
+        <div class="form-container">
+            <h1>Cadastro de Imóvel</h1>
+            <form id="propertyForm">
+                <div class="form-group">
+                    <label for="propertyName">Nome do Imóvel:</label>
+                    <input type="text" id="propertyName" name="propertyName" placeholder="Nome do imóvel" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="propertyType">Tipo de Imóvel:</label>
+                    <select id="propertyType" name="propertyType" required>
+                        <option value="">Selecione</option>
+                        <option value="apartamento">Apartamento</option>
+                        <option value="casa">Casa</option>
+                        <option value="chalet">Chalet</option>
+                        <option value="estudio">Estúdio</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="propertyLocation">Localização:</label>
+                    <input type="text" id="propertyLocation" name="propertyLocation" placeholder="Endereço completo"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="propertyDescription">Descrição:</label>
+                    <textarea id="propertyDescription" name="propertyDescription" rows="4"
+                        placeholder="Descrição do imóvel" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="propertyImages">Imagens:</label>
+                    <input type="file" id="propertyImages" name="propertyImages" multiple accept="image/*" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="propertyRooms">Quantidade de Quartos:</label>
+                    <input type="number" id="propertyRooms" name="propertyRooms" min="1" placeholder="Número de quartos"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="propertyMaxGuests">Quantidade Máxima de Hóspedes:</label>
+                    <input type="number" id="propertyMaxGuests" name="propertyMaxGuests" min="1"
+                        placeholder="Número máximo de hóspedes" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="propertyBathrooms">Quantidade de Banheiros:</label>
+                    <input type="number" id="propertyBathrooms" name="propertyBathrooms" min="1"
+                        placeholder="Número de banheiros" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Comodidades:</label>
+                    <div class="checkbox-group">
+                        <label>
+                            <input type="checkbox" name="amenities" value="piscina">
+                            Piscina
+                        </label>
+                        <label>
+                            <input type="checkbox" name="amenities" value="estacionamento">
+                            Estacionamento
+                        </label>
+                        <label>
+                            <input type="checkbox" name="amenities" value="cafe_da_manha">
+                            Café da Manhã
+                        </label>
+                        <label>
+                            <input type="checkbox" name="amenities" value="wifi">
+                            Wi-Fi
+                        </label>
+                        <label>
+                            <input type="checkbox" name="amenities" value="posicao">
+                            Posição
+                        </label>
+                    </div>
+                </div>
+
+                <button type="submit">Cadastrar Imóvel</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>Pedro H Rodrigues</p>
+    </footer>
+    <script src="js/reserva.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu-principal {
+    background-color: #1d1d1d;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.header-1 {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    justify-content: space-around;
+}
+
+
+.logo img {
+    max-width: 250px;
+
+}
+
+.redes-sociais ul {
+    list-style: none;
+    display: flex;
+}
+
+.redes-sociais li {
+    margin-left: 10px;
+}
+
+.redes-sociais img {
+    width: 24px;
+    height: 24px;
+}
+
+.menu-url {
+    padding: 00px;
+}
+
+.header-2 {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+   
+}
+
+.menu :hover {
+    color: rgb(255, 255, 255);
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: orange;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0, 0.5);
+    background-image: url(../img/background-usuario.jpg);
+    background-size: 100%;
+    background-blend-mode: multiply;
+    text-align: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.container {
+    margin-top: 170px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+
+}
+
+header h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+button {
+    padding: 10px;
+    background-color: #383838;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1d1d1d;
+    margin-top: 20px;
+    width: 100%;
+    color: #aaaaaa;
+}

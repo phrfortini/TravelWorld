@@ -1,0 +1,194 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.menu-principal {
+    background-color: #1d1d1d;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.header-1 {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    justify-content: space-around;
+    background-color: #1d1d1d;
+}
+
+.menu-url {
+    padding: 00px;
+}
+
+.header-2 {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu :hover {
+    color: orange;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+
+
+.logo img {
+    max-width: 200px;
+
+}
+
+.redes-sociais ul {
+    list-style: none;
+    display: flex;
+}
+
+.redes-sociais li {
+    margin-left: 10px;
+}
+
+.redes-sociais img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.header img,
+.footer img {
+    width: 30px;
+    margin: 0 5px;
+}
+
+.container {
+    flex: 1;
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.trip-summary {
+    width: 100%;
+    text-align: center;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.gallery img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+.dates {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 10px 0;
+}
+
+.dates div {
+    flex: 1;
+}
+
+.total-card {
+    background-color: orange;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.payment-methods {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.payment-methods img {
+    width: 50px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.payment-methods img:hover {
+    transform: scale(1.1);
+}
+
+.credit-card-details {
+    display: none;
+    text-align: center;
+}
+
+.btn-finalize {
+    background-color: #ff9800;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+#footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1d1d1d;
+    margin-top: 20px;
+    width: 100%;
+    color: #aaaaaa;
+}

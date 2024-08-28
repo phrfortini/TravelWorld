@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Reserva de Viagem Travel World</title>
+    <link rel="stylesheet" href="css/reserva.css">
+</head>
+
+<body>
+    <div class="header-1">
+        <div class="logo">
+            <img src="img/logo.png" class="logo" alt="logomarca" />
+        </div>
+        <div class="header-2">
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="locador.html">Cadastro</a></li>
+                    <li><a href="reserva.html">Reserva</a></li>
+                    <li><a href="cadastroimovel.html">Anuncie aqui</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="redes-sociais">
+            <ul>
+                <li><a href="https://www.instagram.com/"><img src="img/rede1.png" alt="Instagram" /></a></li>
+                <li><a href="https://x.com/home"><img src="img/rede2.png" alt="Twitter" /></a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <h1>Checkout - Reserva de Viagem</h1>
+
+        <div class="card">
+            <div class="gallery">
+                <img src="img/casa 1/01.jpg" alt="Foto da Casa 1">
+                <img src="img/casa 1/02.jpg" alt="Foto da Casa 2">
+                <img src="img/casa 1/03.jpg" alt="Foto da Casa 3">
+                <img src="img/casa 1/04.jpg" alt="Foto da Casa 4">
+                <img src="img/casa 1/05.jpg" alt="Foto da Casa 5">
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>Resumo da Viagem</h3>
+            <hr>
+            <p>Desfrute de uma estadia relaxante em nossa casa de campo acolhedora, situada em um local tranquilo,
+                rodeado pela natureza. Ideal para famílias e casais.</p>
+            <h3>Descrição do Imóvel</h3>
+            <hr>
+            <p>Esta linda casa de campo oferece 3 quartos espaçosos, uma cozinha moderna totalmente equipada, uma
+                sala
+                de estar confortável com lareira e um amplo jardim com churrasqueira. Perfeito para fins de semana
+                ou
+                férias prolongadas!</p>
+        </div>
+
+        <div class="card">
+            <h3>Detalhes da Viagem</h3>
+            <p><strong>Valor por Noite:</strong> R$ 200,00</p>
+            <div class="dates">
+                <div>
+                    <label for="checkin">Data de Check-in:</label>
+                    <input type="date" id="checkin" onchange="calculateTotal()">
+                </div>
+                <div>
+                    <label for="checkout">Data de Check-out:</label>
+                    <input type="date" id="checkout" onchange="calculateTotal()">
+                </div>
+                <div class="total-card">
+                    <p><strong>Total:</strong> R$ <span id="total-value">0,00</span></p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Formas de Pagamento</h3>
+                <div class="payment-methods">
+                    <img src="img/icons/pix.webp" alt="PIX" onclick="showCreditCard(false)">
+                    <img src="img/icons/boleto.png" alt="Boleto" onclick="showCreditCard(false)">
+                    <img src="img/icons/card.png" alt="Cartão de Crédito" onclick="showCreditCard(true)">
+                </div>
+
+                <div class="credit-card-details">
+                    <h4>Dados do Cartão de Crédito</h4>
+                    <form id="credit-card-form">
+                        <label for="card-name">Nome no Cartão:</label>
+                        <input type="text" id="card-name">
+                        <br>
+                        <label for="card-number">Número do Cartão:</label>
+                        <input type="text" id="card-number">
+                        <br>
+                        <label for="card-expiry">Validade:</label>
+                        <input type="text" id="card-expiry" placeholder="MM/AA">
+                        <br>
+                        <label for="card-cvc">CVC:</label>
+                        <input type="text" id="card-cvc">
+                    </form>
+                </div>
+            </div>
+
+            <button class="btn-finalize" onclick="finalizeReservation()">Finalizar Reserva</button>
+        </div>
+    </div>
+    <footer>
+        <p>Pedro H Rodrigues</p>
+    </footer>
+
+    <script src="js/reserva.js"></script>
+</body>
+
+</html>

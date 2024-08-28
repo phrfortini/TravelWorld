@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuário - Travel World</title>
+    <link rel="stylesheet" href="css/stylelocador.css">
+</head>
+
+<body>
+    <header class="menu-principal">
+        <main>
+            <div class="header-1">
+                <div class="logo">
+                    <img src="img/logo.png" class="logo" alt="logomarca" />
+                </div>
+                <div class="header-2">
+                    <div class="menu">
+                        <ul>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="locador.html">Cadastro</a></li>
+                                <li><a href="reserva.html">Reserva</a></li>
+                                <li><a href="cadastroimovel.html">Anuncie aqui</a></li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+                <div class="redes-sociais">
+                    <ul>
+                        <li><a href="https://www.instagram.com/"><img src="img/rede1.png" alt="Instagram" /></a></li>
+                        <li><a href="https://x.com/home"><img src="img/rede2.png" alt="Twitter" /></a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </main>
+    </header>
+
+    <div class="container">
+        <div class="formulario-cadastro">
+            <h1>Cadastro de Usuário</h1>
+        </div>
+        <form action="/submit-cadastro" method="post">
+            <div class="form-group">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="form-group">
+                <label for="cpf">CPF/CNPJ: </label>
+                <input type="text" id="CPF" name="nome" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required>
+            </div>
+            <div class="form-group">
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" name="endereco" required>
+            </div>
+            <div class="form-group">
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required>
+            </div>
+            <div class="form-group">
+                <label for="confirmar-senha">Confirmar Senha:</label>
+                <input type="password" id="confirmar-senha" name="confirmar-senha" required>
+            </div>
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+    <footer>
+        <p>Pedro H Rodrigues</p>
+    </footer>
+</body>
+
+</html>

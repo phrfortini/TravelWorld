@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imóvel - Travel World</title>
+    <link rel="stylesheet" href="css/imovel.css">
+</head>
+<div class="header-1">
+    <div class="logo">
+        <img src="img/logo.png" class="logo" alt="logomarca" />
+    </div>
+    <div class="header-2">
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="locador.html">Cadastro</a></li>
+                <li><a href="reserva.html">Reserva</a></li>
+                <li><a href="cadastroimovel.html">Anuncie aqui</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="redes-sociais">
+        <ul>
+            <li><a href="https://www.instagram.com/"><img src="img/rede1.png" alt="Instagram" /></a></li>
+            <li><a href="https://x.com/home"><img src="img/rede2.png" alt="Twitter" /></a></li>
+        </ul>
+    </div>
+
+</div>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="locador.html">Cadastro</a></li>
+                <li><a href="reserva.html">Reserva</a></li>
+                <li><a href="cadastroimovel.html">Anuncie aqui</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="property-title">
+            <h1>Bela Casa de Praia</h1>
+        </section>
+
+        <section class="property-gallery">
+            <h2>Galeria de Fotos</h2>
+            <div class="slider">
+                <div class="slides">
+                    <img src="img/casa 1/01.jpg" alt="Imagem 1">
+                    <img src="img/casa 1/02.jpg" alt="Imagem 2">
+                    <img src="img/casa 1/03.jpg" alt="Imagem 3">
+                    <img src="img/casa 1/04.jpg" alt="Imagem 4">
+                    <img src="img/casa 1/05.jpg" alt="Imagem 5">
+                </div>
+                <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                <button class="next" onclick="changeSlide(1)">&#10095;</button>
+                <section class="card-container">
+                    <div class="card">
+                        <h3>Reserva de Imóvel</h3>
+                        <p class="price">R$ 250,00 por noite</p>
+                        <a href="reserva.html"><button class="reserve-button">Reservar Agora</button></a>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <section class="property-description">
+            <h2>Descrição</h2>
+            <hr></br>
+            <p>Esta bela casa de praia oferece todo o conforto que você precisa para uma estadia relaxante. Localizada
+                em um bairro tranquilo, com vista para o mar, a casa é ideal para famílias e grupos de amigos.</p>
+        </section>
+
+        <section class="property-features">
+            <h2>Características</h2>
+            <hr></br>
+            <ul>
+                <li><img src="img/icons/bed.png" alt="Quartos"> 3 Quartos</li>
+                <li><img src="img/icons/bath.png" alt="Banheiros"> 2 Banheiros</li>
+                <li><img src="img/icons/wi-fi.png" alt="WiFi"> WiFi</li>
+                <li><img src="img/icons/pool.png" alt="Piscina"> Piscina</li>
+                <li><img src="img/icons/parking.png" alt="Estacionamento"> Estacionamento</li>
+                <li><img src="img/icons/breakfast.png" alt="Café da Manhã"> Café da Manhã</li>
+            </ul>
+        </section>
+
+        <section class="property-availability">
+            <h2>Disponibilidade</h2>
+            <hr></br>
+            <p>Datas disponíveis para reserva: <span id="available-dates">01/09/2024 - 30/09/2024</span></p>
+        </section>
+
+        <section class="property-reviews">
+            <h2>Avaliação do Imóvel</h2>
+            <hr></br>
+            <span>⭐⭐⭐⭐⭐</span>
+            <p>Avaliação média: <strong>4.8/5</strong></p>
+            <h3>Comentários dos hóspedes:</h3>
+            <ul>
+                <li>
+                    <span class="star-rating">
+                        <input type="radio" name="rating1" id="rating1-5"><label for="rating1-5"></label>
+                        <input type="radio" name="rating1" id="rating1-4"><label for="rating1-4"></label>
+                        <input type="radio" name="rating1" id="rating1-3"><label for="rating1-3"></label>
+                        <input type="radio" name="rating1" id="rating1-2"><label for="rating1-2"></label>
+                        <input type="radio" name="rating1" id="rating1-1"><label for="rating1-1"></label>
+                    </span>
+                    "Lugar incrível, muito confortável!" - João S.
+                </li>
+                <li>
+                    <span class="star-rating">
+                        <input type="radio" name="rating2" id="rating2-5"><label for="rating2-5"></label>
+                        <input type="radio" name="rating2" id="rating2-4"><label for="rating2-4"></label>
+                        <input type="radio" name="rating2" id="rating2-3"><label for="rating2-3"></label>
+                        <input type="radio" name="rating2" id="rating2-2"><label for="rating2-2"></label>
+                        <input type="radio" name="rating2" id="rating2-1"><label for="rating2-1"></label>
+                    </span>
+                    "Vista maravilhosa, voltaremos com certeza." - Maria F.
+                </li>
+                <li>
+                    <span class="star-rating">
+                        <input type="radio" name="rating3" id="rating3-5"><label for="rating3-5"></label>
+                        <input type="radio" name="rating3" id="rating3-4"><label for="rating3-4"></label>
+                        <input type="radio" name="rating3" id="rating3-3"><label for="rating3-3"></label>
+                        <input type="radio" name="rating3" id="rating3-2"><label for="rating3-2"></label>
+                        <input type="radio" name="rating3" id="rating3-1"><label for="rating3-1"></label>
+                    </span>
+                    "A casa é exatamente como nas fotos, adoramos!" - Pedro A.
+                </li>
+            </ul>
+        </section>
+
+        <section class="host-reviews">
+
+            <h2>Avaliação do Locador</h2>
+            <hr></br>
+            <span>⭐⭐⭐⭐⭐</span>
+            <p>Avaliação média: <strong>5/5</strong></p>
+            <h3>Comentários sobre o locador:</h3>
+            <ul>
+                <li>
+                    <span class="star-rating">
+                        <input type="radio" name="rating4" id="rating4-5"><label for="rating4-5"></label>
+                        <input type="radio" name="rating4" id="rating4-4"><label for="rating4-4"></label>
+                        <input type="radio" name="rating4" id="rating4-3"><label for="rating4-3"></label>
+                        <input type="radio" name="rating4" id="rating4-2"><label for="rating4-2"></label>
+                        <input type="radio" name="rating4" id="rating4-1"><label for="rating4-1"></label>
+                    </span>
+                    "Muito atencioso e prestativo." - Ana R.
+
+                </li>
+                <li>
+                    <span class="star-rating">
+                        <input type="radio" name="rating5" id="rating5-5"><label for="rating5-5"></label>
+                        <input type="radio" name="rating5" id="rating5-4"><label for="rating5-4"></label>
+                        <input type="radio" name="rating5" id="rating5-3"><label for="rating5-3"></label>
+                        <input type="radio" name="rating5" id="rating5-2"><label for="rating5-2"></label>
+                        <input type="radio" name="rating5" id="rating5-1"><label for="rating5-1"></label>
+                    </span>
+                    "Respondeu rapidamente todas as nossas dúvidas." - Carlos T.
+                </li>
+                <li>
+                    <span class="star-rating">
+                        <input type="radio" name="rating6" id="rating6-5"><label for="rating6-5"></label>
+                        <input type="radio" name="rating6" id="rating6-4"><label for="rating6-4"></label>
+                        <input type="radio" name="rating6" id="rating6-3"><label for="rating6-3"></label>
+                        <input type="radio" name="rating6" id="rating6-2"><label for="rating6-2"></label>
+                        <input type="radio" name="rating6" id="rating6-1"><label for="rating6-1"></label>
+                    </span>
+                    "O anfitrião foi extremamente gentil e nos deu várias dicas locais." - Beatriz M.
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Pedro H Rodrigues</p>
+    </footer>
+
+    <script src="js/imovel.js"></script>
+</body>
+
+</html>
